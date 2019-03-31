@@ -1,6 +1,19 @@
 require 'bundler'
 Bundler.require
 
+# # Connection to DB
+# ActiveRecord::Base.establish_connection(
+#   {
+#     adapter: 'sqlite3',
+#     database: 'db/twitter.db'
+#   }
+# )
+#
+# # Logger
+# ActiveRecord::Base.logger = Logger.new(STDOUT)
+
+
+
 DB = {
   conn: SQLite3::Database.new('db/twitter.db')
 }
